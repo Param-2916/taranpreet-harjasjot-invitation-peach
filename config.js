@@ -1,0 +1,81 @@
+// Wedding details and the invitation text transcribed from the supplied PDF.
+const CONFIG = {
+  assets: {
+    monogram: "assets/monogram.PNG",
+    song: "assets/song.mp3",
+  },
+  siteUrl: "",
+  couple: {
+    bride: { en: "Taranpreet Kaur", pa: "ਤਰਨਪ੍ਰੀਤ" },
+    groom: { en: "Harjasjot Singh", pa: "ਹਰਜਸਜੋਤ" },
+  },
+  ceremony: {
+    start: "2027-01-24T10:00:00+05:30",
+    end: "2027-01-24T12:00:00+05:30",
+  },
+  events: [
+    {
+      id: "jaggo",
+      title: { en: "Jaggo & Sangeet", pa: "ਜਾਗੋ ਅਤੇ ਸੰਗੀਤ" },
+      date: { en: "Friday, 22 January 2027", pa: "ਸ਼ੁੱਕਰਵਾਰ, ੨੨ ਜਨਵਰੀ ੨੦੨੭" },
+      sourceDate: "Friday, 22nd January, 2027",
+      start: "2027-01-22T18:30:00+05:30",
+      end: "2027-01-22T21:30:00+05:30",
+      times: ["6:30 PM onwards"],
+      venue: "COMMUNITY CENTRE EMAAR",
+      address: "EMAAR MOHALI HILLS, SECTOR-109, MOHALI (PB.)",
+      mapQuery: "Community Centre Emaar, Emaar Mohali Hills, Sector-109, Mohali (PB.)",
+      note: "FOLLOWED BY COCKTAIL & DINNER",
+    },
+    {
+      id: "anand",
+      title: { en: "Reception of Barat & Anand Karaj", pa: "ਬਾਰਾਤ ਦਾ ਸਵਾਗਤ ਅਤੇ ਆਨੰਦ ਕਾਰਜ" },
+      date: { en: "Sunday, 24 January 2027", pa: "ਐਤਵਾਰ, ੨੪ ਜਨਵਰੀ ੨੦੨੭" },
+      sourceDate: "Sunday, 24th January, 2027",
+      start: "2027-01-24T09:30:00+05:30",
+      end: "2027-01-24T12:00:00+05:30",
+      times: [
+        { en: "Reception of Barat", pa: "ਬਰਾਤ ਦਾ ਸਵਾਗਤ", time: "9:30 AM" },
+        { en: "Anand Karaj", pa: "ਆਨੰਦ ਕਾਰਜ", time: "10:00 AM" },
+      ],
+      venue: "GURUDWARA SHRI SAHIBWARA",
+      address: "PHASE - 5, MOHALI (PB.)",
+      mapQuery: "Gurudwara Shri Sahibwara, Phase - 5, Mohali (PB.)",
+    },
+    {
+      id: "lunch",
+      title: { en: "Lunch & Doli", pa: "ਲੰਚ ਅਤੇ ਡੋਲੀ" },
+      date: { en: "Sunday, 24 January 2027", pa: "ਐਤਵਾਰ, ੨੪ ਜਨਵਰੀ ੨੦੨੭" },
+      sourceDate: "Sunday, 24th January, 2027",
+      start: "2027-01-24T14:00:00+05:30",
+      end: "2027-01-24T16:00:00+05:30",
+      times: [
+        { en: "Lunch", pa: "ਲੰਚ", time: "2:00 PM" },
+        { en: "Doli", pa: "ਡੋਲੀ", time: "4:00 PM" },
+      ],
+      venue: "THE GRAND ROMANIA",
+      address: "LANDRAN - BANUR ROAD, NEAR IT CHOWK, MOHALI (PB.)",
+      mapQuery: "The Grand Romania, Landran - Banur Road, Near IT Chowk, Mohali (PB.)",
+    },
+  ],
+  invitation: {
+    host: "Sdn. Kamaljit Kaur",
+    hostRelation: "(W/o Late S. Chamanjit Singh)",
+    brideRelation: "(D/O SDN. PARAMJIT KAUR & S. BALJINDER SINGH)",
+    groomRelation: "(S/O SDN. PARAMJIT KAUR & S. SATWINDER SINGH)",
+    verse: [
+      "॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ ਆਪਣੀ ਮਿਹਰ ਕਰਾਈ ।",
+      "ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ ਇਹੁ ਉਸਦੀ ਵਡਿਆਈ ॥",
+    ],
+    quotation: [
+      "“Marriages are settled in Heaven",
+      "but celebrated on earth",
+      "Sacred unity of two unknown souls",
+      "are written right from birth”",
+    ],
+    rsvpNames: ["BALJINDER SINGH", "RAMAN KUMAR", "JOGINDER SINGH"],
+    phones: ["9417003816", "9041805492"],
+    compliments: ["WITH BEST COMPLIMENTS FROM:", "ALL RELATIVES", "&", "FRIENDS"],
+  },
+};

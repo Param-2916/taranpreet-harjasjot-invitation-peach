@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#E8B49E">
+    <meta name="description" content="A wedding invitation for Taranpreet Kaur and Harjasjot Singh, 24 January 2027, Mohali.">
+    <meta property="og:title" content="Taranpreet Kaur &amp; Harjasjot Singh">
+    <meta property="og:description" content="Wedding invitation · 24 January 2027 · Mohali">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/monogram.PNG">
+    <title>Taranpreet Kaur &amp; Harjasjot Singh · Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&family=Noto+Serif+Gurmukhi:wght@400;500;600&family=Mukta+Mahee:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="locked">
+    <div id="envelope" role="dialog" aria-modal="true" aria-labelledby="envelope-title">
+      <div class="envelope-glow" aria-hidden="true"></div>
+      <div class="envelope-scene" aria-hidden="true">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+        <div class="envelope-seal"></div>
+      </div>
+      <div class="envelope-content">
+        <img class="monogram" src="assets/monogram.PNG" alt="T and H monogram" width="1536" height="1024">
+        <h1 id="envelope-title" data-i18n="gateTitle">A wedding invitation</h1>
+        <button id="open-invitation" class="button button-filled" data-i18n="openInvitation" autofocus>Open invitation</button>
+        <button class="language-toggle" type="button" data-language-toggle></button>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <nav class="primary-nav" aria-label="Invitation sections">
+        <a href="#couple" data-i18n="navCouple">Couple</a>
+        <a href="#events" data-i18n="navEvents">Events</a>
+        <a href="#venue" data-i18n="navVenue">Venue</a>
+        <a href="#rsvp" data-i18n="navRsvp">RSVP</a>
+      </nav>
+      <div class="header-controls">
+        <button class="language-toggle" type="button" data-language-toggle></button>
+        <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false">
+          <span aria-hidden="true">♪</span><span class="music-label" data-i18n="music">Music</span>
+        </button>
+      </div>
+    </header>
+    <p id="music-status" class="visually-hidden" role="status" aria-live="polite"></p>
+
+    <main id="main-content" inert aria-hidden="true">
+      <section id="date-reveal" class="date-reveal section-shell" aria-labelledby="date-title">
+        <div class="section-ornament" aria-hidden="true">✦</div>
+        <p class="eyebrow" data-i18n="dateEyebrow">A date to hold dear</p>
+        <h2 id="date-title" class="section-heading" data-i18n="scratchHeading">A little reveal</h2>
+        <div class="scratch-card" id="scratch-card">
+          <div class="scratch-paper">
+            <p class="scratch-kicker" data-i18n="saveTheDate">Save the date</p>
+            <p id="revealed-date" class="revealed-date">24 January 2027</p>
+            <p class="scratch-location">Mohali · Punjab</p>
+          </div>
+          <canvas id="scratch-surface" role="button" tabindex="0" aria-label="Scratch to reveal the date"></canvas>
+        </div>
+        <p class="scratch-hint" data-i18n="scratchHint">Gently scratch to reveal the date</p>
+        <p class="scratch-note" data-i18n="scratchNote">The date will stay with you once revealed.</p>
+      </section>
+
+      <section id="couple" class="couple-scene section-shell" aria-labelledby="couple-heading">
+        <img class="architectural-art" src="assets/peach-arch.svg" alt="" aria-hidden="true">
+        <p class="eyebrow" data-i18n="coupleEyebrow">Two lives, one beautiful beginning</p>
+        <div class="couple-monogram reveal-item">
+          <img class="monogram" src="assets/monogram.PNG" alt="T and H monogram" width="1536" height="1024">
+        </div>
+        <h2 id="couple-heading" class="couple-names couple-english reveal-item">Taranpreet Kaur <span>&amp;</span> Harjasjot Singh</h2>
+        <p class="couple-names-punjabi reveal-item" lang="pa">ਤਰਨਪ੍ਰੀਤ <span>&amp;</span> ਹਰਜਸਜੋਤ</p>
+        <p class="couple-date reveal-item">24 January 2027 <span class="hairline"></span> Mohali, Punjab</p>
+      </section>
+
+      <section id="traditional-invitation" class="traditional-section section-shell" aria-labelledby="traditional-verse-heading">
+        <article class="traditional-card reveal-item">
+          <div class="traditional-card-inner">
+            <h2 id="traditional-verse-heading" class="traditional-verse-heading" lang="pa"></h2>
+            <div id="traditional-verse" class="traditional-verse" lang="pa"></div>
+            <blockquote id="traditional-quote" class="traditional-quote"></blockquote>
+            <footer class="traditional-footer">
+              <section class="traditional-rsvp" aria-labelledby="traditional-rsvp-heading">
+                <h3 id="traditional-rsvp-heading">R.S.V.P.</h3>
+                <div id="traditional-rsvp-names"></div>
+                <p id="traditional-rsvp-phones"></p>
+              </section>
+              <section class="traditional-compliments" aria-labelledby="traditional-compliments-heading">
+                <h3 id="traditional-compliments-heading"></h3>
+                <div id="traditional-compliments-lines"></div>
+              </section>
+            </footer>
+          </div>
+        </article>
+      </section>
+
+      <section id="invitation" class="invitation-section section-shell" aria-labelledby="invitation-host">
+        <article class="invitation-card reveal-item">
+          <div class="invitation-border">
+            <img class="card-monogram" src="assets/monogram.PNG" alt="" width="1536" height="1024">
+            <div class="host-block">
+              <h2 id="invitation-host" class="host-name">Sdn. Kamaljit Kaur</h2>
+              <p class="host-relation">(W/o Late S. Chamanjit Singh)</p>
+            </div>
+
+            <div class="invitation-copy">
+              <p class="source-line">CORDIALLY INVITES YOU ON THE OCCASION OF</p>
+              <h3 class="source-event-title">JAGGO &amp; SANGEET</h3>
+              <p class="source-line">TO CELEBRATE THE FORTHCOMING WEDDING OF HER LOVING GRAND DAUGHTER</p>
+              <p class="source-name">Taranpreet Kaur</p>
+              <p class="source-line">(D/O SDN. PARAMJIT KAUR &amp; S. BALJINDER SINGH)</p>
+              <p class="source-joining">WITH</p>
+              <p class="source-name">Harjasjot Singh</p>
+              <p class="source-line">(S/O SDN. PARAMJIT KAUR &amp; S. SATWINDER SINGH)</p>
+              <div class="source-event">
+                <p class="source-date">On Friday, 22nd January, 2027</p>
+                <p class="source-line">6:30 PM ONWARDS</p>
+                <p class="source-line">FOLLOWED BY COCKTAIL &amp; DINNER</p>
+                <p class="source-line">VENUE:</p>
+                <p class="source-venue">COMMUNITY CENTRE EMAAR</p>
+                <p class="source-line">EMAAR MOHALI HILLS, SECTOR-109</p>
+                <p class="source-line">MOHALI (PB.)</p>
+              </div>
+              <div class="source-event source-event-spread">
+                <!-- <p class="source-line">REQUESTS THE PLEASURE OF YOUR GRACIOUS PRESENCE ON THE</p>
+                <p class="source-line">AUSPICIOUS OCCASION OF THE WEDDING</p>
+                <p class="source-line">OF HER LOVING GRAND DAUGHTER</p>
+                <p class="source-name">Taranpreet Kaur</p>
+                <p class="source-line">(D/O SDN. PARAMJIT KAUR &amp; S. BALJINDER SINGH)</p>
+                <p class="source-joining">WITH</p>
+                <p class="source-name">Harjasjot Singh</p>
+                <p class="source-line">(S/O SDN. PARAMJIT KAUR &amp; S. SATWINDER SINGH)</p> -->
+                <p class="source-date">On Sunday, 24th January, 2027</p>
+                <div class="printed-schedule">
+                  <p><span>RECEPTION OF BARAT</span><span>9:30 AM</span></p>
+                  <p><span>ANAND KARAJ</span><span>10:00 AM</span></p>
+                </div>
+                <p class="source-line">AT</p>
+                <p class="source-venue">GURUDWARA SHRI SAHIBWARA</p>
+                <p class="source-line">PHASE - 5, MOHALI (PB.)</p>
+                <div class="printed-schedule">
+                  <p><span>LUNCH</span><span>2:00 PM</span></p>
+                  <p><span>DOLI</span><span>4:00 PM</span></p>
+                </div>
+                <p class="source-line">VENUE:</p>
+                <p class="source-venue">THE GRAND ROMANIA</p>
+                <p class="source-line">LANDRAN - BANUR ROAD</p>
+                <p class="source-line">NEAR IT CHOWK, MOHALI (PB.)</p>
+              </div>
+            </div>
+
+            <!-- <div class="source-blessing" lang="pa">
+              <p>॥ ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥</p>
+              <p>ਸਤਿਗੁਰ ਦਾਤੇ ਕਾਜ ਰਚਾਇਆ ਆਪਣੀ ਮਿਹਰ ਕਰਾਈ ।</p>
+              <p>ਦਾਸਾਂ ਕਾਰਜ ਆਪ ਸਵਾਰੇ ਇਹੁ ਉਸਦੀ ਵਡਿਆਈ ॥</p>
+            </div>
+            <blockquote class="source-quote">
+              <p>“Marriages are settled in Heaven</p>
+              <p>but celebrated on earth</p>
+              <p>Sacred unity of two unknown souls</p>
+              <p>are written right from birth”</p>
+            </blockquote>
+            <div class="source-footer">
+              <div>
+                <p class="source-rsvp-title">R.S.V.P.</p>
+                <p>BALJINDER SINGH</p>
+                <p>RAMAN KUMAR</p>
+                <p>JOGINDER SINGH</p>
+                <p>M : 9417003816, 9041805492</p>
+              </div>
+              <div class="source-compliments">
+                <p>WITH BEST COMPLIMENTS FROM:</p>
+                <p>ALL RELATIVES</p>
+                <p>&amp;</p>
+                <p>FRIENDS</p>
+              </div> -->
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="countdown" class="countdown-section section-shell" aria-labelledby="countdown-heading">
+        <img class="architectural-art" src="assets/peach-arch.svg" alt="" aria-hidden="true">
+        <p class="eyebrow" data-i18n="countdownEyebrow">The day we gather</p>
+        <h2 id="countdown-heading" class="section-heading" data-i18n="countdownTitle">Until the Anand Karaj</h2>
+        <div id="countdown-clock" class="countdown-clock" aria-label="Countdown to 24 January 2027 at 10 AM India Standard Time">
+          <div class="countdown-unit"><span id="count-days">--</span><small data-i18n="days">Days</small></div>
+          <div class="countdown-unit"><span id="count-hours">--</span><small data-i18n="hours">Hours</small></div>
+          <div class="countdown-unit"><span id="count-minutes">--</span><small data-i18n="minutes">Minutes</small></div>
+          <div class="countdown-unit"><span id="count-seconds">--</span><small data-i18n="seconds">Seconds</small></div>
+        </div>
+        <p id="countdown-message" class="countdown-message" aria-live="polite"></p>
+        <p class="countdown-timezone" data-i18n="countdownTimezone">24 January 2027 · 10:00 AM · Asia/Kolkata</p>
+      </section>
+
+      <section id="events" class="events-section section-shell" aria-labelledby="events-heading">
+        <p class="eyebrow" data-i18n="eventsEyebrow">Gather, celebrate, bless</p>
+        <h2 id="events-heading" class="section-heading" data-i18n="eventsTitle">Wedding functions</h2>
+        <div id="event-list" class="event-list"></div>
+      </section>
+
+      <section id="venue" class="venue-section section-shell" aria-labelledby="venue-heading">
+        <p class="eyebrow" data-i18n="venueEyebrow">Find your way</p>
+        <h2 id="venue-heading" class="section-heading" data-i18n="venueTitle">The venues</h2>
+        <ul id="venue-directions" class="venue-directions"></ul>
+      </section>
+
+      <section id="rsvp" class="rsvp-section section-shell" aria-labelledby="rsvp-heading">
+        <img class="architectural-art" src="assets/peach-arch.svg" alt="" aria-hidden="true">
+        <p class="eyebrow" data-i18n="rsvpEyebrow">We would be honoured by your presence</p>
+        <h2 id="rsvp-heading" class="section-heading" data-i18n="rsvpTitle">R.S.V.P.</h2>
+        <div class="rsvp-contact-list">
+          <p>BALJINDER SINGH</p>
+          <p>RAMAN KUMAR</p>
+          <p>JOGINDER SINGH</p>
+        </div>
+        <p class="rsvp-phone-label">M : <a href="tel:+919417003816">9417003816</a>, <a href="tel:+919041805492">9041805492</a></p>
+        <p class="rsvp-note" data-i18n="rsvpNote">WhatsApp opens a draft for you to review and send.</p>
+        <div id="whatsapp-links" class="whatsapp-links"></div>
+        <div class="sharing-actions">
+          <button id="share-button" class="button" type="button" data-i18n="share">Share</button>
+          <a id="share-whatsapp" class="button" target="_blank" rel="noopener noreferrer" data-i18n="shareWhatsApp">Share on WhatsApp</a>
+          <button id="copy-link" class="button" type="button" data-i18n="copyLink">Copy link</button>
+        </div>
+        <p id="share-status" class="status-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="closing" class="closing-scene section-shell" aria-labelledby="closing-heading">
+        <div class="closing-envelope" aria-hidden="true">
+          <div class="closing-envelope-inner"></div>
+          <div class="closing-flap"></div>
+        </div>
+        <img class="closing-monogram monogram" src="assets/monogram.PNG" alt="T and H monogram" width="1536" height="1024">
+        <h2 id="closing-heading" class="closing-names">Taranpreet Kaur <span>&amp;</span> Harjasjot Singh</h2>
+        <p class="closing-punjabi" lang="pa">ਤਰਨਪ੍ਰੀਤ <span>&amp;</span> ਹਰਜਸਜੋਤ</p>
+        <p class="closing-date">24 January 2027 <span class="hairline"></span> Mohali, Punjab</p>
+        <button class="button print-button" type="button" data-i18n="saveInvitation">Save invitation</button>
+      </section>
+    </main>
+
+    <audio id="background-music" preload="none" loop></audio>
+    <script src="config.js"></script>
+    <script src="i18n.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
